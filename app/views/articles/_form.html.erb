@@ -1,9 +1,9 @@
 <%= simple_form_for(@article) do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+  <%=f.input :title, label: "Enter the name of your article:" %>
 
-  <%= f.label :content %>
-  <%= f.text_field :content%>
+ <%=f.input :content, label: "Write away..." %>
 
-  <%= f.submit %>
+  <%= f.button :submit, "Submit Article", class: "btn btn-primary", "data-disable-with" => "Submitting.." %>
 <% end %>
+
+
