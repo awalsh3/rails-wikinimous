@@ -1,15 +1,51 @@
 @import "bootstrap/scss/bootstrap";
 
 h1, p, h6 {
-  padding: 20px
+  padding: 20px;
+  text-align: left
 }
 
 h5 {
-  padding: 20px,
+  padding: 20px;
+  text-align: left
 }
 
 
 .container {
   margin: auto
 
+}
+
+.topnav {
+  background-color: #edeff5;
+  overflow: hidden;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #1e86fe;
+  opacity: 80%;
+  color: white;
+}
+
+.right {
+  display: flex;
+  text-align: right
 }
